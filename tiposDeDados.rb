@@ -101,17 +101,17 @@ p var_hash.class
 
 # um exemplo é que podemos alterar o valor de uma variável diversas vezes 
 # e em cada uma delas notar que o tipo de dado também mudou
-p tip_dynamic = 13
-p tip_dynamic.class 
+p type_dynamic = 13
+p type_dynamic.class 
 
-p tip_dynamic = 0.789
-p tip_dynamic.class
+p type_dynamic = 0.789
+p type_dynamic.class
 
-p tip_dynamic = 'Ruby'
-p tip_dynamic.class
+p type_dynamic = 'Ruby'
+p type_dynamic.class
 
-p tip_dynamic = :ruby_simbol
-p tip_dynamic.class 
-
+p type_dynamic = :ruby_simbol
+p type_dynamic.class 
+ 
 # perceba que, usamos um mesmo nome para variável 
 # e instanciando tipos de dados diferentes

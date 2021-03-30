@@ -80,6 +80,7 @@ p estados
 
 # 1. Recupere o segundo elemento do array estados
 p estados[1]
+# Saiba que o primeiro elemento não inicia no índice 1, mas sim no 0.
 
 # 2. Você também pode acessar índices através de intervalos
 p estados[2..4]
@@ -218,6 +219,10 @@ aulas = {'Aula 1' => 'liberada',
          'Aula 3' => 'liberada',
          'Aula 4' => 'liberada',
          'Aula 5' => 'em breve'}
+         
+aulas.each do |key, value|
+  puts "#{key} #{value}"
+end
 
 # Em cada vez a estrutura percorre o hash, o elemento atual é representado por key e value
 
@@ -290,6 +295,7 @@ hash = {0 => 'zero',
         3 => 'três'}
 
 puts 'Selecionando keys com valor maior que 0'
+
 selection_key = hash.select do |key, value|
     key > 0
 end
@@ -298,5 +304,3 @@ puts selection_key
 
 # Veja que dentro deum Hash podemos fazer uma seleção
     # por chave ou valor
-
-

@@ -43,7 +43,8 @@ print("\n")
 # instanciando a variável "dia = domingo"
 dia = 'domingo' 
 
-# expressão "if" que retorna uma condição se é verdadeira
+# expressão "if" retorna uma condição se é verdadeira
+# junto com operador "=="
 if dia == 'domingo'         # 1
     comida = 'especial'
 end
@@ -53,6 +54,17 @@ puts "O almoço hoje é #{comida}! \nJá que hoje é #{dia} :)"
 
 # Leia a condição da seguinte forma:
     # 1) Se o dia é Domingo, então o almoço é especial
+puts '--------------------------------------------------'
+
+# já a expressão "if" junto com operador "!=" 
+# o seu retorno é dada quando a condição é false
+dia = 'domingo'
+
+if dia != 'segunda, terça, quarta, quinta, sexta, sábado'
+    bebo = 'posso'
+end
+
+puts "Hoje #{bebo} beber!"
 puts '--------------------------------------------------'
 
 
@@ -110,11 +122,11 @@ puts '--------------------------------------------------'
     # Crie um arquivo chamado unless.rb e adicione o seguinte código
 
 # condição inicial
-status_produto = 'fechado' 
+status_produto = 'aberto' 
 
-unless status_produto == 'aberto'       # 1
+unless status_produto == 'fechado'       # 1
     check_produto = 'pode'
-else                                    # 2
+else                                       # 2
     check_produto = 'não pode'
 end
 
@@ -127,6 +139,18 @@ puts "Você #{check_produto} trocar o produto"
 # O produto não foi aberto. Execute o programa e veja que o resultado será.
 puts '--------------------------------------------------'
 
+# Uma condição muito similar ao "unless" é o "if not"
+# condição inicial
+status_produto = 'já usado' 
+
+if not status_produto == 'não usado'       # 1
+    check_produto = 'pode'
+else                                       # 2
+    check_produto = 'não pode'
+end
+
+puts "Você #{check_produto} trocar o produto"
+puts '--------------------------------------------------'
 
 # Case
 # Instrução muito parecida com o if. 
@@ -239,6 +263,7 @@ puts '--------------------------------------------------'
 2.times do
     puts 'Estou aprendendo times!'
 end
+puts '--------------------------------------------------'
 
 nomes = ['Fernando', 'Kátia', 
     'Sara', 'Eloah'] # igual ao array, o times começa índice 0
@@ -249,6 +274,11 @@ end
 # Execute o programa e perceba que a estrutura times:
     # Exibe a frase “Estou aprendendo times” 2 vezes
     # Exibe um índice do array nome por 3 vezes
+puts '--------------------------------------------------'
+
+2.times do 
+    puts 'Bye'
+end 
 puts '--------------------------------------------------'
 
 
@@ -271,6 +301,18 @@ end
 # Foi criado uma estrutura de repetição que só será parada 
     # quando o valor da variável count for igual a 10.
 # Execute o programa e veja que ele contará de 1 a 10.
+puts '--------------------------------------------------'
+
+# outra forma de usar
+count = 1
+
+loop do
+  puts count
+  if count == 10
+    break
+  end
+  count += 1
+end
 puts '--------------------------------------------------'
 
 
@@ -298,7 +340,7 @@ loop do
 
         age = current_year - year_of_birth
         resultado = "Quem nasceu no ano de #{year_of_birth}, tem #{age} anos em #{current_year}."
-        
+
     elsif option == 0
         break if option == 0
     else
@@ -311,5 +353,6 @@ end
 # Neste programa é criado uma estrutura de repetição 
     # que permite ao usuário descobrir a idade de alguma pessoa.
 # O programa é executado até que a opção 0 que significa sair seja escolhida.
+
 
 

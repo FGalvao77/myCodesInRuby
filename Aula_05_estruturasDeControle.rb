@@ -1,44 +1,39 @@
 # Estruturas de Controle
 
+# Conteúdo
+
 # Será abordado:
 
 # Estruturas de Controle
+# Condicional
+	# If/Else/Elsif
+	# Unless
+	# Case
 
-    # Condicional
-        # If/Else/Elsif
-        # Unless
-        # Case
-
-    #Iteração
-        # For
-        # While
-        # Times
-        # Do/While (Loop)
+#Iteração
+	# For
+	# While
+	# Times
+	# Do/While (Loop)
         
-    # Iteração + Condicional
+# Iteração + Condicional
 
 
 # Estruturas de Controle
-# Tratam-se de códigos que escrevemos em nossos programas 
-    # para analisar dados e decidir qual caminho seguir. 
-    # Divide-se em dois tipos, Condicional e Iteração. 
-    # Nesta aula você aprenderá como utilizá-los.
- 
+
+# Tratam-se de códigos que escrevemos em nossos programas para analisar dados e decidir qual caminho seguir. Divide-se em dois tipos, Condicional e Iteração. Nesta aula você aprenderá como utilizá-los.
 
 # Condicional
-# Tipo de estrutura de controle que executa um trecho de código 
-    # dependendo do resultado de uma condição.
-    # Abaixo, veja as Instruções Condicionais If, Else, Elsif, Unless e Case.
+# Tipo de estrutura de controle que executa um trecho de código dependendo do resultado de uma condição.
+# Abaixo, veja as Instruções Condicionais If, Else, Elsif, Unless e Case.
  
 
 # If
-# Expressão que verifica se uma condição é verdadeira(true), 
-    # e a partir deste resultado determina se as instruções 
-    # dentro de seu corpo serão ou não executadas.
-print("\n")
+# Expressão que verifica se uma condição é verdadeira(true), e a partir deste resultado determina se as instruções dentro de seu corpo serão ou não executadas.
 
-    # Para entender, vamos para o código como utiliza-lo crie um arquivo chamado if.rb 
-        # e adicione o seguinte código
+# 1. Para entender como utiliza-lo crie um arquivo chamado if.rb e adicione o seguinte código
+ 
+print("\n")
 
 # instanciando a variável "dia = domingo"
 dia = 'domingo' 
@@ -71,7 +66,7 @@ puts '--------------------------------------------------'
 # Else
 # Informa o que fazer quando a verificação de uma condição if for falsa.
 
-    # Para utilizar o else, substitua o código do arquivo if.rb por:
+# 1. Para utilizar o else, substitua o código do arquivo if.rb por:
 
 dia = 'domingo'
 
@@ -84,15 +79,15 @@ end
 p "A comida hoje é #{comida}!!!"
 
 # Leia a condição da seguinte forma:
-    # Se o dia é Domingo, então o almoço é especial
-    # Senão, o almoço é normal.
+	# 1) Se o dia é Domingo, então o almoço é especial
+	# 2) Senão, o almoço é normal.
 puts '--------------------------------------------------'
 
 
 # Elsif
 # Utilizado quando há a necessidade de verificar mais de uma condição em um if.
 
-    # Substitua o código do arquivo if.rb por
+# 1. Substitua o código do arquivo if.rb por
 
 dia = 'feriado'
 
@@ -116,17 +111,16 @@ puts '--------------------------------------------------'
 
 
 # Unless
-# Enquanto o if é executado quando sua condição é verdadeira, 
-    # o unless ocorre de forma contrária. É executado apenas quando a condição é falsa.
+# Enquanto o if é executado quando sua condição é verdadeira, o unless ocorre de forma contrária. É executado apenas quando a condição é falsa.
 
-    # Crie um arquivo chamado unless.rb e adicione o seguinte código
+# 1. Crie um arquivo chamado unless.rb e adicione o seguinte código
 
 # condição inicial
 status_produto = 'aberto' 
 
 unless status_produto == 'fechado'       # 1
     check_produto = 'pode'
-else                                       # 2
+else                                     # 2
     check_produto = 'não pode'
 end
 
@@ -154,9 +148,9 @@ puts '--------------------------------------------------'
 
 # Case
 # Instrução muito parecida com o if. 
-    # Ele se enquadra muito bem a situações com diversas condições.
+# Ele se enquadra muito bem a situações com diversas condições.
 
-    # Em um novo arquivo chamado case.rb adicione o código
+# 1. Em um novo arquivo chamado case.rb adicione o código
 
 puts 'Digite o número do mês em que você nasceu: '      # 1
 
@@ -232,7 +226,8 @@ puts '--------------------------------------------------'
 # While
 # Instrução que repete um bloco de código enquanto sua condição é verdadeira.
 
-# Crie um programa chamado while.rb com o seguinte código
+# 1. Crie um programa chamado while.rb com o seguinte código
+
 x = 1
 
 while x <= 10
@@ -258,7 +253,7 @@ puts '--------------------------------------------------'
 # Times
 # Executa uma repetição por um especificado número de vezes.
 
-# Em um novo programa chamado times.rb adicione o seguinte código
+# 1. Em um novo programa chamado times.rb adicione o seguinte código
 
 2.times do
     puts 'Estou aprendendo times!'
@@ -283,11 +278,10 @@ puts '--------------------------------------------------'
 
 
 # Do/While
-# Na verdade, no Ruby utilizamos uma estrutura de repetição chamada loop 
-    # que faz o mesmo que o do/while em outras linguagens de programação. 
-    # Ele cria um laço de repetição que só é parado quando uma instrução break for verdadeira.
+# Na verdade, no Ruby utilizamos uma estrutura de repetição chamada loop que faz o mesmo que o do/while em outras linguagens de programação. 
+# Ele cria um laço de repetição que só é parado quando uma instrução break for verdadeira.
 
-# Em um arquivo chamado loop.rb adicione o seguinte código.
+# 1. Em um arquivo chamado loop.rb adicione o seguinte código.
 
 count = 1
 
@@ -298,8 +292,7 @@ loop do
     count += 1
 end
 
-# Foi criado uma estrutura de repetição que só será parada 
-    # quando o valor da variável count for igual a 10.
+# Foi criado uma estrutura de repetição que só será parada quando o valor da variável count for igual a 10.
 # Execute o programa e veja que ele contará de 1 a 10.
 puts '--------------------------------------------------'
 
@@ -317,8 +310,7 @@ puts '--------------------------------------------------'
 
 
 # Iteração + Condicional
-# Veja um exemplo de como utilizar 
-    # estas duas estruturas em conjunto, em age.rb, coloque:
+# 1. Veja um exemplo de como utilizar estas duas estruturas em conjunto, em age.rb, coloque:
 
 resultado = ''
 
@@ -350,8 +342,7 @@ loop do
     system "clear"
 end
 
-# Neste programa é criado uma estrutura de repetição 
-    # que permite ao usuário descobrir a idade de alguma pessoa.
+# Neste programa é criado uma estrutura de repetição que permite ao usuário descobrir a idade de alguma pessoa.
 # O programa é executado até que a opção 0 que significa sair seja escolhida.
 
 
